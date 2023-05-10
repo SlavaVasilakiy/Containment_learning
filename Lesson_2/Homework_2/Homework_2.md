@@ -88,8 +88,16 @@ __Задание 1:__
 
 __Задание 2*:__  <br>
 
-В хостовой части прописываем маршруты <br>
-`ip route add 10.0.12.0/24 via 10.0.3.1 dev lxcbr0` <br>
-`ip route add 10.0.13.0/24 via 10.0.3.1 dev lxcbr0` <br>
+`nano /var/lib/lxc/test123` , `nano /var/lib/lxc/test321`
+
+```script
+# Network configuration
+lxc.net.0.ipv4.gateway = 10.0.12.1
+ ```
+
+```script
+# Network configuration
+lxc.net.0.ipv4.gateway = 10.0.13.1
+ ```
 
 ![ping.jpeg](img%2Fping.jpeg)
