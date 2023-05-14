@@ -29,6 +29,7 @@ __Задание:__
     <br>
    
     Проверяем данные `SELECT name, age FROM classmates;` <br>
+
     ![DB_data.jpeg](img%2FDB_data.jpeg) 
     <br>
 4) Запускаем контейнер `docker run --name my-phpmyadmin -d --link homework3:db -p 8081:80 phpmyadmin`
