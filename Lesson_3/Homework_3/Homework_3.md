@@ -26,10 +26,12 @@ __Задание:__
     
     INSERT INTO classmates (name, age, address)VALUES('Stepan Sergeev',42,'Volzhskii,ul. Himikov, 1'),('Anna Andrianovna',38,'Surgut,ul. Mira, 9');
     ```
+    <br>
    
     Проверяем данные `SELECT name, age FROM classmates;` <br>
     ![DB_data.jpeg](img%2FDB_data.jpeg) 
-<br>
+    <br>
 4) Запускаем контейнер `docker run --name my-phpmyadmin -d --link homework3:db -p 8081:80 phpmyadmin`
     указываем линк на DB и порт по которому будет доступна DB <br>
+
     ![PHP_myadmin.jpeg](img%2FPHP_myadmin.jpeg)
