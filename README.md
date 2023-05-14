@@ -7,3 +7,6 @@
 
 ## Урок 2. Механизмы контрольных групп
 [Homework_2](Lesson_2%2FHomework_2%2FHomework_2.md)
+
+## Урок 3. Введение в Docker
+[Homework_3](Lesson_3%2FHomework_3%2FHomework_3.md)
