@@ -19,20 +19,23 @@ __Задание:__
    Захожу в контейнер `docker exec -it homework3 bash` <br>
    Проваливаюсь в DB `mysql -u root -p` <br>
 3) Создаю DB `CREATE DATABASE homework3;`, `use homework3;` <br>
-    Заполнение DB: <br>
+Заполнение DB:
 
-    ```MySQL
-    CREATE TABLE classmates (id INTEGER PRIMARY KEY AUTO_INCREMENT,name TEXT NOT NULL,age TINYINT NOT NULL,address TEXT NOT NULL);
-    
-    INSERT INTO classmates (name, age, address)VALUES('Stepan Sergeev',42,'Volzhskii,ul. Himikov, 1'),('Anna Andrianovna',38,'Surgut,ul. Mira, 9');
-    ```
-    <br>
+<br>
+
+```MySQL
+CREATE TABLE classmates (id INTEGER PRIMARY KEY AUTO_INCREMENT,name TEXT NOT NULL,age TINYINT NOT NULL,address TEXT NOT NULL);
    
-    Проверяем данные `SELECT name, age FROM classmates;` <br>
+INSERT INTO classmates (name, age, address)VALUES('Stepan Sergeev',42,'Volzhskii,ul. Himikov, 1'),('Anna Andrianovna',38,'Surgut,ul. Mira, 9');
+```
 
-    ![DB_data.jpeg](img%2FDB_data.jpeg) 
-    <br>
+Проверяем данные `SELECT name, age FROM classmates;` <br>
+
+![DB_data.jpeg](img%2FDB_data.jpeg) 
+
+<br>
+
 4) Запускаем контейнер `docker run --name my-phpmyadmin -d --link homework3:db -p 8081:80 phpmyadmin`
-    указываем линк на DB и порт по которому будет доступна DB <br>
+указываем линк на DB и порт по которому будет доступна DB <br>
 
-    ![PHP_myadmin.jpeg](img%2FPHP_myadmin.jpeg)
+![PHP_myadmin.jpeg](img%2FPHP_myadmin.jpeg)
