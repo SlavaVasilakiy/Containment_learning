@@ -10,3 +10,6 @@
 
 ## Урок 3. Введение в Docker
 [Homework_3](Lesson_3%2FHomework_3%2FHomework_3.md)
+
+## Урок 4. Dockerfile и слои
+[Homework_4](Lesson_4/Homework_4/Homework_4.md)
