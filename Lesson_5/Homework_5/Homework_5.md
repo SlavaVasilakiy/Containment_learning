@@ -132,7 +132,7 @@
 
    `docker service ls` <br>
 
-   ![service_ls](img/service_ls.png)\
+   ![service_ls](img/service_ls.png)
 
    идём по адресу `http://192.168.2.30:5000/` - голосуем <br>
    проверяем результаты `http://192.168.2.30:5001/` <br>
